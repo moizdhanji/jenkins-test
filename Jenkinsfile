@@ -4,7 +4,8 @@ pipeline {
     stage('Build Assets') {
       steps {
         echo 'Build Started'
-        sh 'mvn clean install'
+        sh '''echo %m2_home%
+mvn clean install'''
       }
     }
 
