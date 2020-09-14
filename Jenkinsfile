@@ -4,8 +4,7 @@ pipeline {
     stage('Build Assets') {
       steps {
         echo 'Build Started'
-        sh '''echo %m2_home%
-mvn clean install'''
+        isUnix()
       }
     }
 
