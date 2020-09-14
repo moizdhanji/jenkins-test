@@ -5,6 +5,7 @@ pipeline {
       steps {
         echo 'Build Started'
         isUnix()
+		mvn clean install
       }
     }
 
